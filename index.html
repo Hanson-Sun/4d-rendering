@@ -10,8 +10,11 @@
 
 <body>
     <div id="canvas"></div>
-
-    <table>
+	
+    <table style = "margin-top:10px;">
+		<tr>
+			<td>Camera parameters</td>
+		</tr>
         <tr>
             <td>
                 <label for="f">f</label>
@@ -72,6 +75,9 @@
     <br>
 
     <table>
+		<tr>
+			<td>Rotating Tesseract</td>
+		</tr>
         <tr>
             <td>
                 <label for="rxy">rot XY</label>
@@ -103,8 +109,9 @@
             </td>
         </tr>
     </table>
-    <p>Supporting 4D rendering implementation for Math IA titled "Visualizing 4D polygons". All parameters pertain to the camera, the 4D points themselves remain stationary. The 4D polygon being projected is a tesseract with the center at the origin and
+    <p>Supporting 4D rendering implementation for Math IA titled "Visualizing 4D polygons". The 4D polygon being projected is a tesseract with the center at the origin and
         side lengths of 200.</p>
+		<p>Link to math paper: <a href="math_ia.pdf" target="_blank">Math IA</a></p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="math.js"></script>
     <script src="script.js"></script>
