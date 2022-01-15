@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>4D Perspecitve Rendering</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="canvas"></div>
+
+    <table>
+        <tr>
+            <td>
+                <label for="f">f</label>
+                <input oninput="update(this)" type="range" min="1" max="500" value="100" class="slider" id="f" name="f"><output>100</output>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="x">c_x</label>
+                <input oninput="update(this)" type="range" min="-1000" max="1000" value="0" class="slider" id="x" name="x"><output>0</output>
+            </td>
+            <td>
+                <label for="y">c_y</label>
+                <input oninput="update(this)" type="range" min="-1000" max="1000" value="0" class="slider" id="y" name="y"><output>0</output>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="z">c_z</label>
+                <input oninput="update(this)" type="range" min="-1000" max="1000" value="0" class="slider" id="z" name="z"><output>0</output>
+            </td>
+            <td>
+                <label for="w">c_w</label>
+                <input oninput="update(this)" type="range" min="-1000" max="1000" value="-100" class="slider" id="w" name="w"><output>-100</output>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="alpha">alpha</label>
+                <input oninput="update(this)" type="range" min="-3" max="3" value="0" step="0.01" class="slider" id="alpha" name="alpha"><output>0</output>
+            </td>
+            <td>
+                <label for="beta">beta</label>
+                <input oninput="update(this)" type="range" min="-3" max="3" value="0" step="0.01" class="slider" id="beta" name="beta"><output>0</output>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gamma">gamma</label>
+                <input oninput="update(this)" type="range" min="-3" max="3" value="0" step="0.01" class="slider" id="gamma" name="gamma"><output>0</output>
+            </td>
+            <td>
+                <label for="delta">delta</label>
+                <input oninput="update(this)" type="range" min="-3" max="3" value="0" step="0.01" class="slider" id="delta" name="delta"><output>0</output>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="epsilon">epsilon</label>
+                <input oninput="update(this)" type="range" min="-3" max="3" value="0" step="0.01" class="slider" id="epsilon" name="epsilon"><output>0</output>
+            </td>
+            <td>
+                <label for="zeta">zeta</label>
+                <input oninput="update(this)" type="range" min="-3" max="3" value="0" step="0.01" class="slider" id="zeta" name="zeta"><output>0</output>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <table>
+        <tr>
+            <td>
+                <label for="rxy">rot XY</label>
+                <input oninput="update(this)" type="range" min="-0.1" max="0.1" value="0" step="0.001" class="slider" id="rxy" name="rxy"><output>0</output>
+            </td>
+            <td>
+                <label for="rxz">rot XZ</label>
+                <input oninput="update(this)" type="range" min="-0.1" max="0.1" value="0" step="0.001" class="slider" id="rxz" name="rxz"><output>0</output>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="ryz">rot YZ</label>
+                <input oninput="update(this)" type="range" min="-0.1" max="0.1" value="0" step="0.001" class="slider" id="ryz" name="ryz"><output>0</output>
+            </td>
+            <td>
+                <label for="rxw">rot XW</label>
+                <input oninput="update(this)" type="range" min="-0.1" max="0.1" value="0" step="0.001" class="slider" id="rxw" name="rxw"><output>0</output>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="ryw">rot YW</label>
+                <input oninput="update(this)" type="range" min="-0.1" max="0.1" value="0" step="0.001" class="slider" id="ryw" name="ryw"><output>0</output>
+            </td>
+            <td>
+                <label for="rzw">rot ZW</label>
+                <input oninput="update(this)" type="range" min="-0.1" max="0.1" value="0" step="0.001" class="slider" id="rzw" name="rzw"><output>0</output>
+            </td>
+        </tr>
+    </table>
+    <p>Supporting 4D rendering implementation for Math IA titled "Visualizing 4D polygons". All parameters pertain to the camera, the 4D points themselves remain stationary. The 4D polygon being projected is a tesseract with the center at the origin and
+        side lengths of 200.</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="math.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

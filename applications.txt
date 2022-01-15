@@ -1,0 +1,19 @@
+quasicrystals and material science
+
+its cool lmao
+
+4d with time
+
+translations and transformations and rotations in 3D
+
+physics and einstein
+
+Limitations:
+	- no clipping
+	- no rotation constraints (unrealistic warping at edge values)
+	- doesnt explicitly deal with fov
+	- no fov scaling and such
+	- very unoptimized algorithm (camera rotation is very expensive)
+	- very primitive method that only deals with points and lines
+	- understanding differential geometry, collision detection and analysis, 3D
+scalar field display, and tool path generation for 5-axes milling machines.
